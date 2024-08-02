@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arithmetic Operations</title>
+<script type="text/javascript">
+function performOperation() {
+    // Get values from input fields and convert them to numbers
+    var num1 = parseInt(document.getElementById("number1").value);
+    var num2 = parseInt(document.getElementById("number2").value);
+    
+    // Perform arithmetic operations and display results
+    document.getElementById("addition").innerHTML = "Addition: " + (num1 + num2);
+    document.getElementById("subtraction").innerHTML = "Subtraction: " + (num1 - num2);
+    document.getElementById("multiplication").innerHTML = "Multiplication: " + (num1 * num2);
+    document.getElementById("division").innerHTML = "Division: " + (num1 / num2);
+}
+</script>
+</head>
+<body>
+<h1>Basic Arithmetic Operations</h1>
+<form>
+    Number 1: <input type="number" id="number1"><br><br>
+    Number 2: <input type="number" id="number2"><br><br>
+    <input type="button" value="Calculate" onclick="performOperation()">
+</form>
+
+<p id="addition"></p>
+<p id="subtraction"></p>
+<p id="multiplication"></p>
+<p id="division"></p>
+</body>
+</html>
